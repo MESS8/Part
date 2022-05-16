@@ -48,4 +48,5 @@ module foward (
       ForwardB=2'b00;
     end
   end
+  
 endmodule

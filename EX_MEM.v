@@ -28,10 +28,10 @@ module EX_MEM (
   reg [31:0] D_Rt_data;
   reg [4:0] D_addr;
   reg [31:0] D_ALUResult;
-  always @( clk)
+  always @( clk)//triger when clk change
   begin
-    if (clk)          //triger when clk change
-    begin
+    if (clk)    //read in data when posedge clk      
+    begin             
       //WB
       WB_write=write_IE;
       WB_MemtoReg=MemtoReg_IE;
@@ -43,7 +43,7 @@ module EX_MEM (
       D_addr=Addr_IE;
       D_ALUResult=ALUResult;
     end
-    else
+    else      //write when negedge of clk
     begin
       //WB
       write_EM= WB_write;

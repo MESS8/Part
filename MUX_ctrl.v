@@ -29,7 +29,7 @@ module ctrl_MUX (
       regdst_stall=0;
       ALUsrc_stall=0;
     end
-    else
+    else    
     begin
       write_stall=write;
       ALUop_stall=ALUop;
