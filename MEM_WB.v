@@ -20,10 +20,10 @@ module MEM_WB (
   reg [31:0] D_Mrdata;
   reg [4:0] D_addr;
   reg [31:0] D_ALUResult;
-  always @(clk)
+  always @(clk)//triger when clk change
   begin
     if (clk)
-    begin
+    begin     //read in data when posedge clk
       //WB
       WB_write=write_EM;
       WB_MemtoReg=MemtoReg_EM;
@@ -32,7 +32,7 @@ module MEM_WB (
       D_addr=Addr_EM;
       D_ALUResult=ALUResult_EM;
     end
-    else
+    else    //output when negedge of clk
     begin
       //WB
       write_MW= WB_write;
