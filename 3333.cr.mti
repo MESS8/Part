@@ -1,0 +1,43 @@
+F:/Templates1/Templates/Part_3/mux5B.V {1 {vlog -work work F:/Templates1/Templates/Part_3/mux5B.V
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux5b
+
+Top level modules:
+	mux5b
+
+} {} {}} F:/Templates1/Templates/Part_3/MUX3.v {1 {vlog -work work F:/Templates1/Templates/Part_3/MUX3.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module M3to1
+
+Top level modules:
+	M3to1
+
+} {} {}} F:/Templates1/Templates/Part_3/mux32b.v {1 {vlog -work work F:/Templates1/Templates/Part_3/mux32b.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux32b
+
+Top level modules:
+	mux32b
+
+} {} {}} F:/Templates1/Templates/Part_3/signext.v {1 {vlog -work work F:/Templates1/Templates/Part_3/signext.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}} F:/Templates1/Templates/Part_3/MUX_ctrl.v {1 {vlog -work work F:/Templates1/Templates/Part_3/MUX_ctrl.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ctrl_MUX
+
+Top level modules:
+	ctrl_MUX
+
+} {} {}} F:/Templates1/Templates/Part_3/MEM_WB.v {1 {vlog -work work F:/Templates1/Templates/Part_3/MEM_WB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MEM_WB
+
+Top level modules:
+	MEM_WB
+
+} {} {}}

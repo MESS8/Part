@@ -1,0 +1,398 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\Templates1\Templates\Part_2
+vadder
+Z1 !s100 DH6hL2W^F<8BUMUa<6lo?2
+Z2 I9C[W0S2?SdjZVa>PHPO6P3
+Z3 V1bbIb]FMF5>:Qf=lKWVm@2
+Z4 dF:\Templates1\Templates\Part_3
+Z5 w1650267422
+Z6 8F:/Templates1/Templates/Part_3/adder.v
+Z7 FF:/Templates1/Templates/Part_3/adder.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/adder.v|
+Z10 o-work work -O0
+Z11 !s108 1652588886.044000
+Z12 !s107 F:/Templates1/Templates/Part_3/adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z13 !s100 l]2j7=MZ@LWd7Q<]aQlU80
+Z14 IF`?RzJ[fA7J^?R>a=9lj@0
+Z15 Vlz09IFklnIYglG[]m@2A?3
+R4
+Z16 w1652443527
+Z17 8F:/Templates1/Templates/Part_3/ALU.v
+Z18 FF:/Templates1/Templates/Part_3/ALU.v
+L0 5
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/ALU.v|
+R10
+Z20 n@a@l@u
+Z21 !s108 1652588886.143000
+Z22 !s107 F:/Templates1/Templates/Part_3/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU_ctrl
+Z23 !s100 Zd@zXOg0O4:0ih^9czKHd1
+Z24 I0W6F<49Y@gVjezN7fi:N83
+Z25 VeW3MzOOSP6T_BdnSGzVkL0
+R4
+Z26 w1652443536
+Z27 8F:/Templates1/Templates/Part_3/ALU_ctrl.v
+Z28 FF:/Templates1/Templates/Part_3/ALU_ctrl.v
+L0 13
+R8
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/ALU_ctrl.v|
+R10
+Z30 n@a@l@u_ctrl
+Z31 !s108 1652588886.239000
+Z32 !s107 F:/Templates1/Templates/Part_3/ALU_ctrl.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol
+Z33 !s100 loG=FJSGDEoj3ZL^aLia72
+Z34 I4iAIJ3kk:TJH@[<<;[fzk1
+Z35 VJ^[FaWzln>5ICZAf:cJIO3
+R4
+Z36 w1652342560
+Z37 8F:/Templates1/Templates/Part_3/control.v
+Z38 FF:/Templates1/Templates/Part_3/control.v
+L0 10
+R8
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/control.v|
+R10
+Z40 !s108 1652588886.329000
+Z41 !s107 F:/Templates1/Templates/Part_3/control.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vctrl_MUX
+Z42 !s100 ?oZ4IzO1IHORGfgcdZ^>:1
+Z43 IDbRRQmfTl:;Pb_C<:<OQW1
+Z44 V:hhm8XSf?fLOhO]g_85T`0
+R4
+Z45 w1652437771
+Z46 8F:/Templates1/Templates/Part_3/MUX_ctrl.v
+Z47 FF:/Templates1/Templates/Part_3/MUX_ctrl.v
+L0 1
+R8
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/MUX_ctrl.v|
+R10
+Z49 nctrl_@m@u@x
+Z50 !s108 1652588887.280000
+Z51 !s107 F:/Templates1/Templates/Part_3/MUX_ctrl.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdetect
+Z52 !s100 VD]849W]9?KKN7i[^IKWh0
+Z53 I7_cn85zGWiDnPYDUMFYYz3
+Z54 VTXFLLazDL>`da>H5QD8=Z1
+R4
+Z55 w1652499886
+Z56 8F:/Templates1/Templates/Part_3/hazard_dect_u.v
+Z57 FF:/Templates1/Templates/Part_3/hazard_dect_u.v
+L0 1
+R8
+r1
+31
+Z58 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/hazard_dect_u.v|
+R10
+Z59 !s108 1652588886.841000
+Z60 !s107 F:/Templates1/Templates/Part_3/hazard_dect_u.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDM
+Z61 !s100 DhJfEDNN<P0?>^j?VLnCo2
+Z62 I7IWoAWWgKZc:=O8bPdGdA3
+Z63 VicU`LKKR2GGmeI_MceWOC2
+R4
+Z64 w1651913298
+Z65 8F:/Templates1/Templates/Part_3/DM.v
+Z66 FF:/Templates1/Templates/Part_3/DM.v
+L0 11
+R8
+r1
+31
+Z67 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/DM.v|
+R10
+n@d@m
+Z68 !s108 1652588886.417000
+Z69 !s107 F:/Templates1/Templates/Part_3/DM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vEX_MEM
+Z70 !s100 e^fP4dMngdfLFPd0G:Roz3
+Z71 IQgmKzE3_W9<101d[@B`N_0
+Z72 V;ME;l[E<8Cf<KnYjke4AL0
+R4
+Z73 w1652281983
+Z74 8F:/Templates1/Templates/Part_3/EX_MEM.v
+Z75 FF:/Templates1/Templates/Part_3/EX_MEM.v
+L0 1
+R8
+r1
+31
+Z76 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/EX_MEM.v|
+R10
+Z77 n@e@x_@m@e@m
+Z78 !s108 1652588886.520000
+Z79 !s107 F:/Templates1/Templates/Part_3/EX_MEM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFinalCPU
+Z80 !s100 eLBL1X6E[O?:WX[_C;gGQ0
+Z81 IO01XNo@SjHgIoiBM`P1If1
+Z82 V7[`3QMB7o>NMFYa]kC6ih2
+R4
+Z83 w1652500031
+Z84 8F:/Templates1/Templates/Part_3/FinalCPU.v
+Z85 FF:/Templates1/Templates/Part_3/FinalCPU.v
+L0 5
+R8
+r1
+31
+Z86 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/FinalCPU.v|
+R10
+Z87 n@final@c@p@u
+Z88 !s108 1652588886.627000
+Z89 !s107 F:/Templates1/Templates/Part_3/FinalCPU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfoward
+Z90 !s100 5h]l;MmH`dTgjRUO@E0=Y1
+Z91 I5QBzXgeFhdPO`m9Z>ACZl0
+Z92 VNFo7=7?<62l0?dn3Ii<lP1
+R4
+Z93 w1652497290
+Z94 8F:/Templates1/Templates/Part_3/forward.v
+Z95 FF:/Templates1/Templates/Part_3/forward.v
+L0 1
+R8
+r1
+31
+Z96 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/forward.v|
+R10
+Z97 !s108 1652588886.728000
+Z98 !s107 F:/Templates1/Templates/Part_3/forward.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vID_EX
+Z99 !s100 7@6nff:OEGXU9Q_[779Fj0
+Z100 IPo6Vf7e4_mFTRI5Ehe:MM0
+Z101 VaC<BCGk]b6fRLn>YJSzcY2
+R4
+Z102 w1652420977
+Z103 8F:/Templates1/Templates/Part_3/ID_EX.v
+Z104 FF:/Templates1/Templates/Part_3/ID_EX.v
+L0 1
+R8
+r1
+31
+Z105 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/ID_EX.v|
+R10
+Z106 n@i@d_@e@x
+Z107 !s108 1652588886.928000
+Z108 !s107 F:/Templates1/Templates/Part_3/ID_EX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_ID
+Z109 !s100 kR7Y@QoJJmMQ?AH?HEJY^3
+Z110 IWRSL65hUanAQ@g`OlHehS0
+Z111 V9U[?c:Ql0zl0Ra20F8kY12
+R4
+Z112 w1652434580
+Z113 8F:/Templates1/Templates/Part_3/IF_ID.v
+Z114 FF:/Templates1/Templates/Part_3/IF_ID.v
+L0 1
+R8
+r1
+31
+Z115 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/IF_ID.v|
+R10
+Z116 n@i@f_@i@d
+Z117 !s108 1652588887.016000
+Z118 !s107 F:/Templates1/Templates/Part_3/IF_ID.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIM
+Z119 !s100 7KL<f0zC5g]2Z_2k9<M361
+Z120 I05m<gAiHK3FG5cU_74ibY3
+Z121 V5cko=CNBmV7S2D26g5iKQ0
+R4
+Z122 w1652435990
+Z123 8F:/Templates1/Templates/Part_3/IM.v
+Z124 FF:/Templates1/Templates/Part_3/IM.v
+L0 7
+R8
+r1
+31
+Z125 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/IM.v|
+R10
+n@i@m
+Z126 !s108 1652588887.108000
+Z127 !s107 F:/Templates1/Templates/Part_3/IM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vM3to1
+Z128 !s100 _B`Q>z62X5iiSb>4;m=fn2
+Z129 IDn^[kZ3FUHLINj>I=O;cP3
+Z130 VnFL27n@fZ4WSa=FdZRlQR1
+R4
+Z131 w1652437071
+Z132 8F:/Templates1/Templates/Part_3/MUX3.v
+Z133 FF:/Templates1/Templates/Part_3/MUX3.v
+L0 1
+R8
+r1
+31
+Z134 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/MUX3.v|
+R10
+Z135 n@m3to1
+Z136 !s108 1652588887.385000
+Z137 !s107 F:/Templates1/Templates/Part_3/MUX3.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMEM_WB
+Z138 !s100 33O__bkL;W9EPRZjfzl^C0
+Z139 IUQ5oX_TiD?PjSYhb8@YTf0
+Z140 VSkTj5I4eTgW6]TR>EH_<c1
+R4
+Z141 w1652281970
+Z142 8F:/Templates1/Templates/Part_3/MEM_WB.v
+Z143 FF:/Templates1/Templates/Part_3/MEM_WB.v
+L0 1
+R8
+r1
+31
+Z144 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/MEM_WB.v|
+R10
+Z145 n@m@e@m_@w@b
+Z146 !s108 1652588887.191000
+Z147 !s107 F:/Templates1/Templates/Part_3/MEM_WB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux32b
+Z148 !s100 L>d7l0j?il7B8mIQEMcA40
+Z149 Iz493lTB8z0@oR;kmDAgQW0
+Z150 VH39k2ll:<B54Q]J<`nmVL0
+R4
+Z151 w1650335148
+Z152 8F:/Templates1/Templates/Part_3/mux32b.v
+Z153 FF:/Templates1/Templates/Part_3/mux32b.v
+L0 1
+R8
+r1
+31
+Z154 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/mux32b.v|
+R10
+Z155 !s108 1652588887.560000
+Z156 !s107 F:/Templates1/Templates/Part_3/mux32b.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux5b
+Z157 !s100 O^O:<U4l=WCVJg10D^IT90
+Z158 Inb]QKJg0QT>d<dg_FXZhM1
+Z159 Vkd7GV9TnP9c[Xh8Q03TBT1
+R4
+Z160 w1650334368
+Z161 8F:/Templates1/Templates/Part_3/mux5B.V
+Z162 FF:/Templates1/Templates/Part_3/mux5B.V
+L0 1
+R8
+r1
+31
+Z163 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/mux5B.V|
+R10
+Z164 !s108 1652588887.477000
+Z165 !s107 F:/Templates1/Templates/Part_3/mux5B.V|
+!i10b 1
+!s85 0
+!s101 -O0
+vRF
+Z166 !s100 im9?<7dCPd75ZMi^R?b9H3
+Z167 Id6O=cZ2U[j5894MlBzPzV1
+Z168 Vb04QheHZcT6c6JXB:R3D@0
+R4
+Z169 w1650267618
+Z170 8F:/Templates1/Templates/Part_3/RF.v
+Z171 FF:/Templates1/Templates/Part_3/RF.v
+L0 31
+R8
+r1
+31
+Z172 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/RF.v|
+R10
+n@r@f
+Z173 !s108 1652588887.665000
+Z174 !s107 F:/Templates1/Templates/Part_3/RF.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsignext
+Z175 !s100 JoX1^KY@G@7^^ZCM`boE10
+Z176 ILd[0E5G5ncHzmY9GRWM:G0
+Z177 VD01lX=fTkMZMZRi54=3W`0
+R4
+Z178 w1650286164
+Z179 8F:/Templates1/Templates/Part_3/signext.v
+Z180 FF:/Templates1/Templates/Part_3/signext.v
+L0 1
+R8
+r1
+31
+Z181 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/signext.v|
+R10
+!i10b 1
+!s85 0
+Z182 !s108 1652588887.751000
+Z183 !s107 F:/Templates1/Templates/Part_3/signext.v|
+!s101 -O0
+vtb_FinalCPU
+!i10b 1
+!s100 c9][N>MG[IMEiemdV8FI>0
+I3miViDP5ZYR<35nOh4RCz3
+Z184 VIT_e8`maDi1LERWI[aYPh0
+R4
+w1652588879
+Z185 8F:/Templates1/Templates/Part_3/tb_FinalCPU.v
+Z186 FF:/Templates1/Templates/Part_3/tb_FinalCPU.v
+L0 49
+R8
+r1
+!s85 0
+31
+!s108 1652588887.840000
+!s107 F:/Templates1/Templates/Part_3/tb_FinalCPU.v|
+Z187 !s90 -reportprogress|300|-work|work|F:/Templates1/Templates/Part_3/tb_FinalCPU.v|
+!s101 -O0
+R10
+Z188 ntb_@final@c@p@u
