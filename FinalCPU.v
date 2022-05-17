@@ -81,7 +81,7 @@ module FinalCPU(
            .clk                     ( clk            ),
            .instr                   ( instr   [31:0] ),
            .IF_ID_Write             (IF_ID_Write      ),
-
+          // Outputs
            .instrr                  ( instrr  [31:0] )
          );
   detect  u_detect (
@@ -89,7 +89,7 @@ module FinalCPU(
             .Rs_addr                 ( instrr     [25:21] ),
             .Rt_addr                 ( instrr     [20:16] ),
             .MemRead_IE              ( MemRead_IE         ),
-
+            // Outputs
             .stall                   ( stall              ),
             .IF_ID_Write             ( IF_ID_Write        ),
             .PCWrite                ( PCWrite           )
@@ -103,7 +103,7 @@ module FinalCPU(
             .MemWrite                ( MemWrite              ),
             .regdst                  ( regdst_s                ),
             .ALUsrc                  ( ALUsrc_s                ),
-        
+            // Outputs
             .write_stall             ( write_stall           ),
             .ALUop_stall             ( ALUop_stall     [1:0] ),
             .MemtoReg_stall          ( MemtoReg_stall        ),
@@ -112,12 +112,12 @@ module FinalCPU(
             .regdst_stall            ( regdst_stall          ),
             .ALUsrc_stall            ( ALUsrc_stall          )
         );
-  signext  u_signext (
+  signext  u_signext (//sign extend the immediate value
              .orgin                   ( instrr     [15:0] ),
-
+            // Outputs
              .extended                ( extended  [31:0] )
            );
-  control  u_control (
+  control  u_control (//control unit process the opcode and output the control signal
              .opcode                  ( instrr          [31:26] ),
              //output
              .write                   ( write                 ),
@@ -128,26 +128,26 @@ module FinalCPU(
              .ALUsrc                  ( ALUsrc_s              ),
              .ALUop                   ( ALUop_s         [1:0] )
            );
-  mux5b  u1_mux5b (
+  mux5b  u1_mux5b (//5bit MUX choose the register depend on instrution type
            .choose                  ( regdst      ),
            .c0                      ( Rt_addr_IE  [4:0] ),
            .c1                      ( Rd_addr_IE  [4:0] ),
-
+          // Outputs
            .out5                    ( out5    [4:0] )
          );
-  mux32b  u0_mux32b (
+  mux32b  u0_mux32b (//first 32bit MUX choose the input for the ALU
             .choose                  ( ALUsrc        ),
             .c0                      ( outB3    [31:0] ),
             .c1                      ( imm_v              [31:0] ),
 
             .out32                   ( out32   [31:0] )
           );
-  ALU  u_ALU (
+  ALU  u_ALU (//ALU do the caculation work
          .Src_1                   ( outA3    [31:0] ),
          .Src_2                   ( out32   [31:0] ),
          .shamt                   ( imm_v               [10:6]  ),
          .funct                     ( funct                [5:0]  ),
-
+        // Outputs
          .ALUResult                 ( ALUResult    [31:0]      )
        );
   M3to1  A_M3to1 (
@@ -155,7 +155,7 @@ module FinalCPU(
            .c2                      ( Rd_data    [31:0]    ),
            .c3                      ( ALUResult_EM  [31:0] ),
            .choose                  ( ForwardA    [1:0] ),
-
+          // Outputs
            .out3                    ( outA3    [31:0] )
          );
   M3to1  B_M3to1 (
@@ -163,7 +163,7 @@ module FinalCPU(
            .c2                      ( Rd_data    [31:0]    ),
            .c3                      ( ALUResult_EM  [31:0] ),
            .choose                  ( ForwardB    [1:0] ),
-
+          // Outputs
            .out3                    ( outB3    [31:0] )
          );
   foward  u_foward (
@@ -173,7 +173,7 @@ module FinalCPU(
             .Addr_EM                 ( Addr_EM     [4:0]  ),
             .Rs_addr_IE              ( Rs_addr_IE  [4:0] ),
             .Rt_addr_IE              ( Rt_addr_IE  [4:0] ),
-
+          // Outputs
             .ForwardA                ( ForwardA    [1:0]  ),
             .ForwardB                ( ForwardB    [1:0]  )
           );
@@ -186,7 +186,7 @@ module FinalCPU(
             .Addr_IE                 ( out5          [4:0]  ),
             .Rt_data_IE              ( outB3    [31:0] ),
             .ALUResult               ( ALUResult     [31:0] ),
-
+          // Outputs
             .write_EM                ( write_EM             ),
             .MemtoReg_EM             ( MemtoReg_EM          ),
             .MemRead_EM              ( MemRead_EM           ),
@@ -195,18 +195,18 @@ module FinalCPU(
             .Rt_data_EM              ( Rt_data_EM    [31:0] ),
             .ALUResult_EM            ( ALUResult_EM  [31:0] )
           );
-  mux32b  u1_mux32b (
+  mux32b  u1_mux32b (//second MUX choose between ALU result or memory
             .choose                  ( MemtoReg_MW         ),
             .c0                      (ALUResult_MW  [31:0]),
             .c1                      (  Mrdata_MW     [31:0]),
-
+          // Outputs
             .out32                   ( Rd_data    [31:0] )
           );
   /*
    * Declaration of Register File.
    * CAUTION: DONT MODIFY THE NAME.
    */
-  RF Register_File(
+  RF Register_File(//register flie deliever data of selected address
        // Outputs
        .Rs_data                 ( Rs_data  [31:0] ),
        .Rt_data                 ( Rt_data  [31:0] ),
@@ -233,7 +233,7 @@ module FinalCPU(
            .Rs_data                 ( Rs_data         [31:0] ),
            .Rt_data                 ( Rt_data         [31:0] ),
            .extended                ( extended        [31:0] ),//instrr     [15:0]
-
+          // Outputs
            .write_IE                ( write_IE               ),
            .MemtoReg_IE             ( MemtoReg_IE            ),
            .MemRead_IE              ( MemRead_IE             ),
@@ -249,22 +249,22 @@ module FinalCPU(
            .imm_v                   ( imm_v           [31:0] ) //instrr     [15:0]
          );
 
-  ALU_ctrl  u_ALU_ctrl (
+  ALU_ctrl  u_ALU_ctrl (//control ALU according to ALUop code
               .funct_ctrl              ( imm_v            [5:0]  ),
               .ALUop                   ( ALUop            [1:0]  ),
-
+            // Outputs
               .funct         (  funct    [5:0]    )
             );
-  adder  u_adder (
+  adder  u_adder (//PC+4
            .Addr_In                 ( Addr_In   [31:0] ),
-
+          // Outputs
            .Addr_Out                ( Addr_Out  [31:0] )
          );
   /*
    * Declaration of Data Memory.
    * CAUTION: DONT MODIFY THE NAME.
    */
-  DM Data_Memory(
+  DM Data_Memory(//data
        .clk                     ( clk              ),
        .Memaddr                 ( ALUResult_EM   [31:0] ),
        .Mwdata                  ( Rt_data_EM    [31:0] ),
@@ -280,7 +280,7 @@ module FinalCPU(
             .Addr_EM                 ( Addr_EM       [4:0]  ),
             .Mrdata                  ( Mrdata        [31:0] ),
             .ALUResult_EM            ( ALUResult_EM  [31:0] ),
-
+            // Outputs
             .write_MW                ( write_MW                ),
             .MemtoReg_MW             ( MemtoReg_MW             ),
             .Rd_addr                 ( Rd_addr       [4:0]  ),
