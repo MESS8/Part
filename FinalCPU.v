@@ -77,6 +77,7 @@ module FinalCPU(
        // Inputs
        .Addr_In                 ( Addr_In  [31:0] )
      );
+     //
   IF_ID  u_IF_ID (
            .clk                     ( clk            ),
            .instr                   ( instr   [31:0] ),
