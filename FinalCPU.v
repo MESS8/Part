@@ -1,7 +1,3 @@
-/*
- * Declaration of top entry for this project.
- * CAUTION: DONT MODIFY THE NAME AND I/O DECLARATION.
- */
 module FinalCPU(
     // Outputs
     output	wire			PCWrite,
@@ -78,14 +74,14 @@ module FinalCPU(
        .Addr_In                 ( Addr_In  [31:0] )
      );
      //
-  IF_ID  u_IF_ID (
+  IF_ID  u_IF_ID (//IF/ID pipeline reg drive by a IF_ID_Write signal
            .clk                     ( clk            ),
            .instr                   ( instr   [31:0] ),
            .IF_ID_Write             (IF_ID_Write      ),
           // Outputs
            .instrr                  ( instrr  [31:0] )
          );
-  detect  u_detect (
+  detect  u_detect (//hazard detection unit produce a stall
             .Rt_addr_IE              ( Rt_addr_IE   [4:0] ),
             .Rs_addr                 ( instrr     [25:21] ),
             .Rt_addr                 ( instrr     [20:16] ),
@@ -95,7 +91,7 @@ module FinalCPU(
             .IF_ID_Write             ( IF_ID_Write        ),
             .PCWrite                ( PCWrite           )
           );
- ctrl_MUX  u_ctrl_MUX (
+ ctrl_MUX  u_ctrl_MUX (//when stall prodeuce a nop
             .stall                   ( stall                 ),
             .write                   ( write                 ),
             .ALUop                   ( ALUop_s           [1:0] ),
@@ -151,7 +147,7 @@ module FinalCPU(
         // Outputs
          .ALUResult                 ( ALUResult    [31:0]      )
        );
-  M3to1  A_M3to1 (
+  M3to1  A_M3to1 (//choose from orgin data and forwarding data form pipelin reg
            .c1                      ( Rs_data_IE  [31:0]   ),
            .c2                      ( Rd_data    [31:0]    ),
            .c3                      ( ALUResult_EM  [31:0] ),
@@ -159,7 +155,7 @@ module FinalCPU(
           // Outputs
            .out3                    ( outA3    [31:0] )
          );
-  M3to1  B_M3to1 (
+  M3to1  B_M3to1 (//choose from orgin data and forwarding data form pipelin reg
            .c1                      ( Rt_data_IE  [31:0]   ),
            .c2                      ( Rd_data    [31:0]    ),
            .c3                      ( ALUResult_EM  [31:0] ),
@@ -167,7 +163,7 @@ module FinalCPU(
           // Outputs
            .out3                    ( outB3    [31:0] )
          );
-  foward  u_foward (
+  foward  u_foward (//forwarding unit detect hazard and choose between forwarding data
             .write_EM                ( write_EM           ),
             .write_MW                ( write_MW           ),
             .Rd_addr                 ( Rd_addr     [4:0]  ),
@@ -178,7 +174,7 @@ module FinalCPU(
             .ForwardA                ( ForwardA    [1:0]  ),
             .ForwardB                ( ForwardB    [1:0]  )
           );
-  EX_MEM  u_EX_MEM (
+  EX_MEM  u_EX_MEM (//EX/MEM pipeline reg
             .clk                     ( clk                  ),
             .write_IE                ( write_IE             ),
             .MemtoReg_IE             ( MemtoReg_IE          ),
@@ -219,7 +215,7 @@ module FinalCPU(
        .Rt_addr                 ( instrr  [20:16]  ),
        .Rd_data                 ( Rd_data  [31:0] )
      );
-  ID_EX  u_ID_EX (
+  ID_EX  u_ID_EX (//ID/EX pipeline reg
            .clk                     ( clk                    ),
            .write                   ( write_stall                  ),
            .MemtoReg                ( MemtoReg_stall              ),
@@ -274,7 +270,7 @@ module FinalCPU(
        //output
        .Mrdata                  ( Mrdata    [31:0] )
      );
-  MEM_WB  u_MEM_WB (
+  MEM_WB  u_MEM_WB (//MEM/WB pipeline reg
             .clk                     ( clk                  ),
             .write_EM                ( write_EM             ),
             .MemtoReg_EM             ( MemtoReg_EM          ),
